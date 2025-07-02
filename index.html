@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sala de Aula - Turma 5A</title>
+  <style>
+    body {
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #f7971e 0%, #ffd200 100%);
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    .sala {
+      background: rgba(255,255,255,0.97);
+      padding: 32px 28px 28px 28px;
+      border-radius: 20px;
+      max-width: 900px;
+      margin: 40px auto 32px auto;
+      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+      position: relative;
+      border: 2px solid #ffd200;
+      transition: box-shadow 0.3s;
+    }
+    .sala:hover {
+      box-shadow: 0 12px 40px 0 #f7971e44;
+    }
+    .cabecalho {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .foto-professor {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #f7971e;
+      box-shadow: 0 2px 8px #ffd200;
+      margin: 0;
+      float: none;
+      background: #fffbe7;
+    }
+    .titulo {
+      font-size: 2.3em;
+      margin-bottom: 0;
+      color: #f7971e;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 8px #fffbe7;
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .info {
+      margin-bottom: 24px;
+      font-size: 1.13em;
+      color: #222;
+      line-height: 1.7;
+      background: #fffbe7;
+      border-radius: 10px;
+      padding: 14px 18px;
+      box-shadow: 0 1px 4px #ffd20044;
+    }
+    .foto-sala {
+      width: 100%;
+      border-radius: 14px;
+      margin-top: 18px;
+      box-shadow: 0 2px 12px #ffd20099;
+      border: 2px solid #f7971e;
+      margin-bottom: 10px;
+    }
+    .trabalhos {
+      margin-top: 32px;
+      background: linear-gradient(90deg, #fffbe7 60%, #ffe082 100%);
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 8px #ffd20044;
+      border-left: 6px solid #f7971e;
+    }
+    .trabalhos h2 {
+      color: #f7971e;
+      margin-top: 0;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      font-weight: 700;
+    }
+    .trabalhos ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .trabalhos li {
+      margin-bottom: 10px;
+      font-size: 1.12em;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px 14px;
+      box-shadow: 0 1px 3px #ffd20044;
+      border-left: 4px solid #f7971e;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.2s;
+    }
+    .trabalhos li strong {
+      color: #f7971e;
+      font-weight: 700;
+    }
+    .trabalhos img {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 1px 3px #ffd20044;
+      border: 1.5px solid #ffd200;
+      background: #fffbe7;
+    }
+    .aviso {
+      margin-top: 24px;
+      background: #fffde7;
+      color: #f7971e;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 1.13em;
+      box-shadow: 0 1px 4px #ffd20044;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 2px dashed #ffd200;
+    }
+    @media (max-width: 600px) {
+      .sala { padding: 10px 4px; }
+      .cabecalho { flex-direction: column; gap: 10px; }
+      .foto-professor { margin: 0 auto; }
+      .foto-sala { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sala">
+    <div class="cabecalho">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor João" class="foto-professor">
+      <h1 class="titulo">Turma 1° -</h1>
+    </div>
+    <div class="info">
+      <strong>Professor:</strong> Edneusa <br>
+      <strong>Horário:</strong> Terça 1°, 2°, e sexta 3°, 4°,<br>
+      <strong> Matéria:</strong> Matemática.
+    </div>
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Sala de Aula" class="foto-sala">
+    <div class="trabalhos">
+      <h2>Temas e Trabalhos Recentes</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabalho"><strong>Trabalho:</strong> Trabalho sobre funções - Entrega: Já foi</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png" alt="Prova"><strong>Prova:</strong> ...</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Atividade"><strong>Atividade:</strong> 5 questões da explicação em sala - Já foi</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" alt="Leitura"><strong>Leitura:</strong> ...</li>
+      </ul>
+    </div>
+    <div class="aviso">
+      <strong>Aviso:</strong> Não se esqueça de trazer o material completo e revisar os conteúdos antes das avaliações. Lembrando das trocas de horário
+    </div>
+  </div>
+  <!--  -->
+  <div class="sala">
+    <div class="cabecalho">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor João" class="foto-professor">
+      <h1 class="titulo">Turma 1° - J</h1>
+    </div>
+    <div class="info">
+      <strong>Professor:</strong> Sara <br>
+      <strong>Horário:</strong> Segunda 3°, 4°, e Quita 5°, 6°,<br>
+      <strong> Matéria:</strong> Portuquês.
+    </div>
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Sala de Aula" class="foto-sala">
+    <div class="trabalhos">
+      <h2>Temas e Trabalhos Recentes</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabalho"><strong>Trabalho:</strong> Crónica - Entrega: Já foi </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png" alt="Prova"><strong>Prova:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Atividade"><strong>Atividade:</strong> Escolha uma figura de linguagem e faça um mapa mental - Entrega: próxima aula</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" alt="Leitura"><strong>Leitura:</strong> ... </li>
+      </ul>
+    </div>
+    <div class="aviso">
+      <strong>Aviso:</strong> Não se esqueça de trazer o material completo e revisar os conteúdos antes das avaliações. Lembrando das trocas de horário
+    </div>
+  </div>
+  <!--  -->
+  <div class="sala">
+    <div class="cabecalho">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor João" class="foto-professor">
+      <h1 class="titulo">Turma 1° - J</h1>
+    </div>
+    <div class="info">
+      <strong>Professor:</strong> Geovani <br>
+      <strong>Horário:</strong> Segunda 6°, e Terça 3°, 4°,<br>
+      <strong> Matéria:</strong> História.
+    </div>
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Sala de Aula" class="foto-sala">
+    <div class="trabalhos">
+      <h2>Temas e Trabalhos Recentes</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabalho"><strong>Trabalho:</strong> Trabalho sobre um jornal Histórico - Entrega: 15/8 </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png" alt="Prova"><strong>Prova:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Atividade"><strong>Atividade:</strong> Resumo da pág 46 á 50 e Questões 5 a 7 da página 56 - Próxima aula</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" alt="Leitura"><strong>Leitura:</strong> ... </li>
+      </ul>
+    </div>
+    <div class="aviso">
+      <strong>Aviso:</strong> Não se esqueça de trazer o material completo e revisar os conteúdos antes das avaliações. Lembrando das trocas de horário
+    </div>
+  </div>
+  <!--  -->
+  <div class="sala">
+    <div class="cabecalho">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor João" class="foto-professor">
+      <h1 class="titulo">Turma 1° - J</h1>
+    </div>
+    <div class="info">
+      <strong>Professor:</strong> ... <br>
+      <strong>Horário:</strong> Segunda 5°, Quarta: trilha 5°, 6°, e Quinta 3°, 4°,<br>
+      <strong> Matéria:</strong> Geografia.
+    </div>
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Sala de Aula" class="foto-sala">
+    <div class="trabalhos">
+      <h2>Temas e Trabalhos Recentes</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabalho"><strong>Trabalho:</strong> Trabalhos Questões do livro e resumo - Entrega: Próxima aula </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png" alt="Prova"><strong>Prova:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Atividade"><strong>Atividade:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" alt="Leitura"><strong>Leitura:</strong> Livro didático </li>
+      </ul>
+    </div>
+    <div class="aviso">
+      <strong>Aviso:</strong> Não se esqueça de trazer o material completo e revisar os conteúdos antes das avaliações. Lembrando das trocas de horário
+    </div>
+  </div>
+  <!--  -->
+  <div class="sala">
+    <div class="cabecalho">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor João" class="foto-professor">
+      <h1 class="titulo">Turma 1° -</h1>
+    </div>
+    <div class="info">
+      <strong>Professor:</strong> ... <br>
+      <strong>Horário:</strong> Terça 5°, 6°, <br>
+      <strong> Matéria:</strong> Inglês.
+    </div>
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Sala de Aula" class="foto-sala">
+    <div class="trabalhos">
+      <h2>Temas e Trabalhos Recentes</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabalho"><strong>Trabalho:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png" alt="Prova"><strong>Prova:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Atividade"><strong>Atividade:</strong> 10 questões - Próxima aula</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" alt="Leitura"><strong>Leitura:</strong> ... </li>
+      </ul>
+    </div>
+    <div class="aviso">
+      <strong>Aviso:</strong> Não se esqueça de trazer o material completo e revisar os conteúdos antes das avaliações. Lembrando das trocas de horário
+    </div>
+  </div>
+  <!--  -->
+  <div class="sala">
+    <div class="cabecalho">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor João" class="foto-professor">
+      <h1 class="titulo">Turma 1° - J</h1>
+    </div>
+    <div class="info">
+      <strong>Professor:</strong> Jorge <br>
+      <strong>Horário:</strong> Quarta: Filosofia Pf.v.f, 2°, Quinta 1°, 2°, e sexta 5°,<br>
+      <strong> Matéria:</strong> Filosofia.
+    </div>
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Sala de Aula" class="foto-sala">
+    <div class="trabalhos">
+      <h2>Temas e Trabalhos Recentes</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabalho"><strong>Trabalho:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png" alt="Prova"><strong>Prova:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Atividade"><strong>Atividade:</strong> Definição de hedonismo, 4 questões - Semana dia 04/07</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" alt="Leitura"><strong>Leitura:</strong> ... </li>
+      </ul>
+    </div>
+    <div class="aviso">
+      <strong>Aviso:</strong> Não se esqueça de trazer o material completo e revisar os conteúdos antes das avaliações. Lembrando das trocas de horário
+    </div>
+  </div>
+  <!--  -->
+  <div class="sala">
+    <div class="cabecalho">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor João" class="foto-professor">
+      <h1 class="titulo">Turma 1° - J</h1>
+    </div>
+    <div class="info">
+      <strong>Professor:</strong> ... <br>
+      <strong>Horário:</strong> sexta 1°, 2°,<br>
+      <strong> Matéria:</strong> Educação física.
+    </div> 
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Sala de Aula" class="foto-sala">
+    <div class="trabalhos">
+      <h2>Temas e Trabalhos Recentes</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabalho"><strong>Trabalho:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png" alt="Prova"><strong>Prova:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Atividade"><strong>Atividade:</strong> ... </li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" alt="Leitura"><strong>Leitura:</strong> ... </li>
+      </ul>
+    </div>
+    <div class="aviso">
+      <strong>Aviso:</strong> Não se esqueça de trazer o material completo e revisar os conteúdos antes das avaliações. Lembrando das trocas de horário
+    </div>
+  </div>
+  <!--  -->
+  <div class="sala">
+    <div class="cabecalho">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor João" class="foto-professor">
+      <h1 class="titulo">Turma 1° - J</h1>
+    </div>
+    <div class="info">
+      <strong>Professor:</strong> ... <br>
+      <strong>Horário:</strong> Segunda 1°, 2°, e sexta 6°,<br>
+      <strong> Matéria:</strong> Sociologia.
+    </div>
+    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Sala de Aula" class="foto-sala">
+    <div class="trabalhos">
+      <h2>Temas e Trabalhos Recentes</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabalho"><strong>Trabalho:</strong> Trabalho sobre funções - Entrega: Já foi</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135792.png" alt="Prova"><strong>Prova:</strong> ...</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Atividade"><strong>Atividade:</strong> 5 questões da explicação em sala - Já foi</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135773.png" alt="Leitura"><strong>Leitura:</strong> ...</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80" alt="Alunos estudando" style="width:100%;max-width:350px;display:block;margin:18px auto 0 auto;border-radius:10px;box-shadow:0 2px 8px #b2dfdb;">
+    </div>
+    <div class="aviso">
+      <strong>Aviso:</strong> Não se esqueça de trazer o material completo e revisar os conteúdos antes das avaliações. Lembrando das trocas de horário.
+    </div>
+  </div>
+</body>
+</html>
